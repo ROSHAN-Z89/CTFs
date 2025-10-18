@@ -1,8 +1,3 @@
-
-<p align="center">
-  <img width="120" height="120" src="images/thm_logo.png">
-</p>
-
 # 🏴‍☠️ THM - Wgel (CTF Write-up)
 
 ### 📌 Target Information
