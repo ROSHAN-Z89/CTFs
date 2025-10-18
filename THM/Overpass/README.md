@@ -197,13 +197,13 @@ username: James
 password: james13
 ```
 
-got shell access through a private key
+Gaining shell access through a private key
 ```
 ssh -i id_rsa James@10.201.119.57
 james13
 ```
 
-###### Spot 1st Flag (user.txt)
+###### Found 1st Flag (user.txt) --> Post Exploit Section
 
 Executed  "linpeas.sh"  in the victim(James) machine 
 found '/etc/hosts'  is out of root permissions
