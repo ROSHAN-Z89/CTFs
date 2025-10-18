@@ -241,5 +241,5 @@ thm{65c1aaf000506e56996822c6281e6bf7}
 
 ##### Flag 2 : root.txt
 ```
-root.txt = thm{7f336f8c359dbac18d54fdd64ea753bb}
+thm{7f336f8c359dbac18d54fdd64ea753bb}
 ```
