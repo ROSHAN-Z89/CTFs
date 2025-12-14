@@ -188,7 +188,7 @@ ssh2john id_rsa > ssh_overpass.txt
 
 Pass Crack
 ```
-john --wordlist /usr/share/wordlists/rockyou.txt ssh_overpass.txt
+john --wordlist=/usr/share/wordlists/rockyou.txt ssh_overpass.txt
 ```
 
 Creds
